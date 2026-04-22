@@ -17,8 +17,16 @@
     <h1>halowww</h1>
     <form method="post">
         nama:<input type="text" name="nama" value="<?= $item['nama'] ?>"><br><br>
-        kelompok:<input type="text" name="kelompok" value="<?= $item['kelompok'] ?>"><br><br>
-        waktu_hadir:<input type="text" name="waktu_hadir" value="<?= $item['waktu_hadir'] ?>"><br><br>
+         Kelompok:
+       <select name="kelompok">
+        <option value="">-- pilihan kelompok--</option>
+        <option value="orang tua">orang tua</option>
+        <option value="guru">guru</option>
+        <option value="Tamu khusus">Tamu khusus</option>
+        <option value="siswa/i">siswa/i</option>
+       </select>
+       <br><br>
+        waktu_hadir:<input type="time" name="waktu_hadir" value="<?= $item['waktu_hadir'] ?>"><br><br>
 
         <button type="submit" name="update">update</button>
     </form>

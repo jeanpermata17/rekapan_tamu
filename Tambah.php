@@ -15,14 +15,19 @@ include 'koneksi.php';
 <h1>Tambah Data Siswa</h1>
 
 <form method="post">
-    <label>Nama</label><br>
-    <input type="text" name="nama" required><br>
+    nama:<input type="text" name="nama" required><br><br>
 
-    <label>Kelompok</label><br>
-    <input type="text" name="kelompok" required><br>
+    Kelompok:
+       <select name="kelompok">
+        <option value="">-- pilihan kelompok--</option>
+        <option value="orang tua">orang tua</option>
+        <option value="guru">guru</option>
+        <option value="Tamu khusus">Tamu khusus</option>
+        <option value="siswa/i">siswa/i</option>
+       </select>
+       <br><br>
 
-    <label>Waktu Hadir</label><br>
-    <input type="text" name="waktu_hadir" required><br><br>
+    waktu_hadir:<input type="time" name="waktu_hadir" required><br><br>
 
     <button type="submit" name="simpan">SIMPAN</button><br>
 </form>
